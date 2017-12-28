@@ -18,6 +18,17 @@ var Tree = function(value) {
     }
   };
 
+  this.makeArray = function() {
+    var array = [];
+    (function traverse(node) {
+      array.push(node.value);
+      for (var i = 0; i < node.children.length; i++) {
+        traverse(node.children[i]);
+      }
+    })(this);
+    return array;
+  };
+
   this.addChild = function(child) {
     if (!child || !(child instanceof Tree)) {
       child = new Tree(child);
