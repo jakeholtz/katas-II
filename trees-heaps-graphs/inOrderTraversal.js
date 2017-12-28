@@ -4,7 +4,7 @@ var binarySearchTree = require('./data.js').binarySearchTree;
 var largeBinarySearchTree = require('./data.js').largeBinarySearchTree;
 
 
-// IN ORDER TRAVERSAL (IOT) - WORKS ONLY FOR COMPLETE BINARY SEARCH TERMS
+// IN ORDER TRAVERSAL (IOT) - WORKS ONLY FOR COMPLETE BINARY SEARCH TREES
 function arrayizeIOTone(tree, results = [], depth = 0) {
   if (tree.children[0]) inOrderTraversalTwo(tree.children[0], results);
   results.push(tree.value);
