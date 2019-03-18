@@ -1,8 +1,8 @@
-// A child going up a staircase with n steps, can hop up 1, 2, or 3 steps at a time.
-// Implement a method to count how many ways the child can run up the stairs
+/*  A child going up a staircase with n steps, can hop up 1, 2, or 3 steps at a time.  *
+ *  Implement a method to count how many ways the child can run up the stairs          */
 
 
-/* IMPLEMENTATION ONE: Fibonacci-like implemetation — [Time Complexity: O(3^N)] — Lines 9 */
+/* IMPLEMENTATION ONE: Fibonacci-like implemetation — [Time Complexity: O(3^N)] */
 function countWays(n) {
   if (n < 0) {
     return 0;
@@ -13,7 +13,7 @@ function countWays(n) {
   }
 }
 
-// IMPLEMENTATION TWO - Fibonacci-like implemetation, memoized — [Time Complexity: O(N)] — Lines 9 */
+// IMPLEMENTATION TWO - Fibonacci-like implemetation, memoized — [Time Complexity: O(N)] */
 function countWays(n, cache = {}) {
 
   if (n < 0) return 0;
@@ -26,7 +26,7 @@ function countWays(n, cache = {}) {
   }
 }
 
-// IMPLEMENTATION THREE - Using a recursive loop, with closure — [Time Complexity: O(3^N)] — Lines 12  */
+// IMPLEMENTATION THREE - Using a recursive loop, with closure — [Time Complexity: O(3^N)] */
 function countWays(n) {
   var sum = 0;
 
@@ -42,7 +42,7 @@ function countWays(n) {
   return sum;
 }
 
-// IMPLEMENTATION FOUR - Using a recursive loop, one function — [Time Complexity: O(3^N)] — Lines 11  */
+// IMPLEMENTATION FOUR - Using a recursive loop, one function — [Time Complexity: O(3^N)] */
 function countWays(n) {
   var [remaining, sum = 0] = arguments;
 
