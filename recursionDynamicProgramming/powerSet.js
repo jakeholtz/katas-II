@@ -12,3 +12,13 @@ var powerSet = function(str) {
   })('', str);
   return Object.keys(uniques);
 };
+
+// SIMPLER, ITERATIVE SOLUTION
+function subsets(str) {
+  var allSets = [''];
+  for (var i = 0; i < str.length; i++) {
+    var newSets = allSets.map((item) => item + str[i]);
+    allSets.push(...newSets);
+  }
+  return allSets;
+}
