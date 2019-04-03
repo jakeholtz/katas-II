@@ -32,4 +32,21 @@ const linkedList2 = new Node(5);
 linkedList2.addToTail(9);
 linkedList2.addToTail(2);
 
-module.exports = { Node, linkedList1, linkedList2 };
+const linkedList3 = new Node('R');
+linkedList3.addToTail('A');
+linkedList3.addToTail('C');
+linkedList3.addToTail('E');
+linkedList3.addToTail('C');
+linkedList3.addToTail('A');
+linkedList3.addToTail('R');
+
+const linkedList4 = new Node('R');
+linkedList4.addToTail('E');
+linkedList4.addToTail('C');
+linkedList4.addToTail('E');
+linkedList4.addToTail('I');
+linkedList4.addToTail('V');
+linkedList4.addToTail('E');
+linkedList4.addToTail('R');
+
+module.exports = { Node, linkedList1, linkedList2, linkedList3, linkedList4 };
