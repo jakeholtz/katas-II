@@ -22,7 +22,7 @@ function removeNth(node, n) {
 }
 
 
-/* SOLUTION 2 - Optimized Iterative - Time Complexity: O(2N) => O(N) / Space Complexity: O(1) */
+/* SOLUTION 2 - Optimized Iterative - Time Complexity: O(N) / Space Complexity: O(1) */
 function removeNth(node, n) {
   var pointer1 = node;
   var pointer2 = node;
@@ -38,6 +38,6 @@ function removeNth(node, n) {
     pointer1 = pointer1.next;
     pointer2 = pointer2.next;
   }
-  
+
   return pointer2;
 }
