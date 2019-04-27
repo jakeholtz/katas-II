@@ -49,4 +49,10 @@ linkedList4.addToTail('V');
 linkedList4.addToTail('E');
 linkedList4.addToTail('R');
 
-module.exports = { Node, linkedList1, linkedList2, linkedList3, linkedList4 };
+const linkedList5 = new Node(1);
+linkedList5.addToTail(2);
+linkedList5.addToTail(3);
+linkedList5.addToTail(4);
+linkedList5.addToTail(5);
+
+module.exports = { Node, linkedList1, linkedList2, linkedList3, linkedList4, linkedList5 };

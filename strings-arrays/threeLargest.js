@@ -11,7 +11,7 @@ const findThreeLargest = (arr) => {
 
       /* and less than medium */
       if (num < middle) {
-        largest[0] = small;
+        largest[0] = num;
 
       /* or greater than medium (or medium doesn't exist) */
       } else if (!middle || num > middle) {
@@ -20,7 +20,7 @@ const findThreeLargest = (arr) => {
         if (num < big) {
           largest[0] = middle;
           largest[1] = num;
-          
+
         /* or greater than big (or big doesn't exist) */ 
         } else {
           largest[0] = middle;
